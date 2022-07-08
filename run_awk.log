@@ -1,0 +1,2236 @@
+the name of the running script: ./awk_script.sh
+! /
+c h
+w k
+c h
+a t
+ 
+c h
+w k
+c h
+w k
+c h
+c h
+c h
+w k
+c h
+w k
+c h
+w k
+c h
+w k
+ 
+c h
+w k
+c h
+w k
+ 
+c h
+w k
+ 
+a w
+c h
+c h
+w k
+c h
+a t
+ 
+c h
+a t
+c h
+w k
+c h
+w k
+c h
+w k
+c h
+w k
+ 
+c h
+w k
+c h
+w k
+c h
+w k
+c h
+w k
+ 
+ 
+c h
+w k
+c h
+w k
+c h
+w k
+c h
+w k
+ 
+c h
+w k
+e c
+a w
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+w k
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+w k
+c h
+w k
+ 
+ 
+c h
+w k
+ 
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+ 
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+e c
+a w
+ 
+c h
+w k
+ 
+c h
+w k
+ 
+c h
+e t
+a w
+ 
+c h
+c h
+ 
+a w
+ 
+c h
+a t
+c h
+ 
+ 
+e t
+c h
+e t
+e t
+ 
+s e
+a l
+  g
+l i
+  g
+l i
+ 
+l i
+l i
+ 
+  g
+e t
+c h
+ 
+ 
+  g
+   
+   
+a w
+ 
+a w
+ 
+  g
+   
+   
+ 
+   
+   
+   
+********************the whole input txt content**********************************
+hello hello
+data data
+xyz abc
+123 789
+ftp
+Apache
+apache
+data ad
+ad data
+*************show the 2/3 column********************
+e l
+a t
+y z
+2 3
+t p
+p a
+p a
+a t
+d  
+*************show the 2/3 column, where the 1st column is larger than 3********************
+e l
+a t
+y z
+t p
+p a
+p a
+a t
+d  
+*************************the separator is : ******************************************************************
+1 and 2 and 3
+*************show the 3/4 rows, NR represent the row num********************
+xyz abc
+123 789
+************* first find the row, which contains data; then print the 2nd parameter, where the separator is blank space********************
+data
+ad
+data
+***********first find the 2nd colunm, which contains data, then print all of these rows, whose 2nd colunm is data **********************************************************************
+data data
+ad data
+***********first find the 2nd colunm, which contains data, then print the second part of these rows, whose 2nd colunm is data **********************************************************************
+data
+data
+*******************************************find and print the rows, which including data**********************************************************************
+data data
+data ad
+ad data
+*******************************************experiment2**********************************************************************
+***********first find the 2nd colunm, which does not contain data, then print all of these rows, whose 2nd colunm is not data **********************************************************************
+hello hello
+xyz abc
+123 789
+ftp
+Apache
+apache
+data ad
+//***************the following codes are learned from ZHIHU net***********//
+*********************set separator as :, then print the 1st parameter (method1)*******************************
+root
+bin
+daemon
+adm
+lp
+sync
+shutdown
+halt
+mail
+uucp
+operator
+games
+gopher
+ftp
+nobody
+dbus
+rpc
+oprofile
+named
+pegasus
+cimsrvr
+usbmuxd
+hsqldb
+rtkit
+nscd
+avahi-autoipd
+vcsa
+abrt
+apache
+saslauth
+postfix
+tss
+dovecot
+dovenull
+unbound
+haldaemon
+mysql
+rpcuser
+nfsnobody
+mailnull
+smmsp
+tomcat
+ntp
+dhcpd
+memcached
+pcp
+gdm
+pulse
+xguest
+quagga
+sabayon
+sshd
+mailman
+webalizer
+arpwatch
+ident
+chrony
+uuidd
+nslcd
+ldap
+cyrus
+radvd
+squid
+stap-server
+tcpdump
+radiusd
+setroubleshoot
+insights
+zabbix
+*********************set separator as :, then print the 1st parameter (method2)*******************************
+root
+bin
+daemon
+adm
+lp
+sync
+shutdown
+halt
+mail
+uucp
+operator
+games
+gopher
+ftp
+nobody
+dbus
+rpc
+oprofile
+named
+pegasus
+cimsrvr
+usbmuxd
+hsqldb
+rtkit
+nscd
+avahi-autoipd
+vcsa
+abrt
+apache
+saslauth
+postfix
+tss
+dovecot
+dovenull
+unbound
+haldaemon
+mysql
+rpcuser
+nfsnobody
+mailnull
+smmsp
+tomcat
+ntp
+dhcpd
+memcached
+pcp
+gdm
+pulse
+xguest
+quagga
+sabayon
+sshd
+mailman
+webalizer
+arpwatch
+ident
+chrony
+uuidd
+nslcd
+ldap
+cyrus
+radvd
+squid
+stap-server
+tcpdump
+radiusd
+setroubleshoot
+insights
+zabbix
+****************************the standard output are as followings*******************************************
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/cache/rpcbind:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+named:x:25:25:Named:/var/named:/sbin/nologin
+pegasus:x:66:65:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+cimsrvr:x:134:134:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+hsqldb:x:96:96::/var/lib/hsqldb:/sbin/nologin
+rtkit:x:499:499:RealtimeKit:/proc:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+saslauth:x:498:76:Saslauthd user:/var/empty/saslauth:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+dovecot:x:97:97:Dovecot IMAP server:/usr/libexec/dovecot:/sbin/nologin
+dovenull:x:497:493:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
+unbound:x:496:492:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+mysql:x:27:27:MySQL Server:/var/lib/mysql:/bin/bash
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+tomcat:x:91:91:Apache Tomcat:/usr/share/tomcat6:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+dhcpd:x:177:177:DHCP server:/:/sbin/nologin
+memcached:x:495:491:Memcached daemon:/var/run/memcached:/sbin/nologin
+pcp:x:494:490:Performance Co-Pilot:/var/lib/pcp:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+pulse:x:493:489:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+xguest:x:500:500:Guest:/home/xguest:/bin/bash
+quagga:x:92:92:Quagga routing suite:/var/run/quagga:/sbin/nologin
+sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+mailman:x:41:41:GNU Mailing List Manager:/usr/lib/mailman:/sbin/nologin
+webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+arpwatch:x:77:77::/var/lib/arpwatch:/sbin/nologin
+ident:x:98:98::/:/sbin/nologin
+chrony:x:492:485::/var/lib/chrony:/sbin/nologin
+uuidd:x:491:484:UUID generator helper daemon:/var/lib/libuuid:/sbin/nologin
+nslcd:x:65:55:LDAP Client User:/:/sbin/nologin
+ldap:x:55:55:LDAP User:/var/lib/ldap:/sbin/nologin
+cyrus:x:76:12:Cyrus IMAP Server:/var/lib/imap:/sbin/nologin
+radvd:x:75:75:radvd user:/:/sbin/nologin
+squid:x:23:23::/var/spool/squid:/sbin/nologin
+stap-server:x:155:155:Systemtap Compile Server:/var/lib/stap-server:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+radiusd:x:95:95:radiusd user:/home/radiusd:/sbin/nologin
+setroubleshoot:x:490:482::/var/lib/setroubleshoot:/sbin/nologin
+insights:x:489:481:Red Hat Insights:/var/lib/insights:/sbin/nologin
+zabbix:x:488:480:Zabbix Monitoring System:/var/lib/zabbix:/sbin/nologin
+****************************print the beginning with root******************************************
+root:x:0:0:root:/root:/bin/bash
+****************************print the row, which including root******************************************
+root:x:0:0:root:/root:/bin/bash
+operator:x:11:0:operator:/root:/sbin/nologin
+******************************print the 3rd and 5th column ********************************************
+0 root
+1 bin
+2 daemon
+3 adm
+4 lp
+5 sync
+6 shutdown
+7 halt
+8 mail
+10 uucp
+11 operator
+12 games
+13 gopher
+14 FTP User
+99 Nobody
+81 System message bus
+32 Rpcbind Daemon
+16 Special user account to be used by OProfile
+25 Named
+66 tog-pegasus OpenPegasus WBEM/CIM services
+134 tog-pegasus OpenPegasus WBEM/CIM services
+113 usbmuxd user
+96 
+499 RealtimeKit
+28 NSCD Daemon
+170 Avahi IPv4LL Stack
+69 virtual console memory owner
+173 
+48 Apache
+498 Saslauthd user
+89 
+59 Account used by the trousers package to sandbox the tcsd daemon
+97 Dovecot IMAP server
+497 Dovecot's unauthorized user
+496 Unbound DNS resolver
+68 HAL daemon
+27 MySQL Server
+29 RPC Service User
+65534 Anonymous NFS User
+47 
+51 
+91 Apache Tomcat
+38 
+177 DHCP server
+495 Memcached daemon
+494 Performance Co-Pilot
+42 
+493 PulseAudio System Daemon
+500 Guest
+92 Quagga routing suite
+86 Sabayon user
+74 Privilege-separated SSH
+41 GNU Mailing List Manager
+67 Webalizer
+77 
+98 
+492 
+491 UUID generator helper daemon
+65 LDAP Client User
+55 LDAP User
+76 Cyrus IMAP Server
+75 radvd user
+23 
+155 Systemtap Compile Server
+72 
+95 radiusd user
+490 
+489 Red Hat Insights
+488 Zabbix Monitoring System
+******************************print the 0th column ********************************************
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/cache/rpcbind:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+named:x:25:25:Named:/var/named:/sbin/nologin
+pegasus:x:66:65:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+cimsrvr:x:134:134:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+hsqldb:x:96:96::/var/lib/hsqldb:/sbin/nologin
+rtkit:x:499:499:RealtimeKit:/proc:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+saslauth:x:498:76:Saslauthd user:/var/empty/saslauth:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+dovecot:x:97:97:Dovecot IMAP server:/usr/libexec/dovecot:/sbin/nologin
+dovenull:x:497:493:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
+unbound:x:496:492:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+mysql:x:27:27:MySQL Server:/var/lib/mysql:/bin/bash
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+tomcat:x:91:91:Apache Tomcat:/usr/share/tomcat6:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+dhcpd:x:177:177:DHCP server:/:/sbin/nologin
+memcached:x:495:491:Memcached daemon:/var/run/memcached:/sbin/nologin
+pcp:x:494:490:Performance Co-Pilot:/var/lib/pcp:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+pulse:x:493:489:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+xguest:x:500:500:Guest:/home/xguest:/bin/bash
+quagga:x:92:92:Quagga routing suite:/var/run/quagga:/sbin/nologin
+sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+mailman:x:41:41:GNU Mailing List Manager:/usr/lib/mailman:/sbin/nologin
+webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+arpwatch:x:77:77::/var/lib/arpwatch:/sbin/nologin
+ident:x:98:98::/:/sbin/nologin
+chrony:x:492:485::/var/lib/chrony:/sbin/nologin
+uuidd:x:491:484:UUID generator helper daemon:/var/lib/libuuid:/sbin/nologin
+nslcd:x:65:55:LDAP Client User:/:/sbin/nologin
+ldap:x:55:55:LDAP User:/var/lib/ldap:/sbin/nologin
+cyrus:x:76:12:Cyrus IMAP Server:/var/lib/imap:/sbin/nologin
+radvd:x:75:75:radvd user:/:/sbin/nologin
+squid:x:23:23::/var/spool/squid:/sbin/nologin
+stap-server:x:155:155:Systemtap Compile Server:/var/lib/stap-server:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+radiusd:x:95:95:radiusd user:/home/radiusd:/sbin/nologin
+setroubleshoot:x:490:482::/var/lib/setroubleshoot:/sbin/nologin
+insights:x:489:481:Red Hat Insights:/var/lib/insights:/sbin/nologin
+zabbix:x:488:480:Zabbix Monitoring System:/var/lib/zabbix:/sbin/nologin
+******************************print the 7th column ********************************************
+/bin/bash
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/bin/sync
+/sbin/shutdown
+/sbin/halt
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/bin/bash
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/bin/bash
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+/sbin/nologin
+******************************print the 7th column, which beginning with root or ftp (method1) ********************************************
+/bin/bash
+/sbin/nologin
+******************************print the 7th column, which beginning with root or ftp (method2) ********************************************
+/bin/bash
+/sbin/nologin
+******************************print the rows, which beginning with root or ftp ********************************************
+root:x:0:0:root:/root:/bin/bash
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+******************************print the 1st and 3rd column ********************************************
+root 0
+bin 1
+daemon 2
+adm 3
+lp 4
+sync 5
+shutdown 6
+halt 7
+mail 8
+uucp 10
+operator 11
+games 12
+gopher 13
+ftp 14
+nobody 99
+dbus 81
+rpc 32
+oprofile 16
+named 25
+pegasus 66
+cimsrvr 134
+usbmuxd 113
+hsqldb 96
+rtkit 499
+nscd 28
+avahi-autoipd 170
+vcsa 69
+abrt 173
+apache 48
+saslauth 498
+postfix 89
+tss 59
+dovecot 97
+dovenull 497
+unbound 496
+haldaemon 68
+mysql 27
+rpcuser 29
+nfsnobody 65534
+mailnull 47
+smmsp 51
+tomcat 91
+ntp 38
+dhcpd 177
+memcached 495
+pcp 494
+gdm 42
+pulse 493
+xguest 500
+quagga 92
+sabayon 86
+sshd 74
+mailman 41
+webalizer 67
+arpwatch 77
+ident 98
+chrony 492
+uuidd 491
+nslcd 65
+ldap 55
+cyrus 76
+radvd 75
+squid 23
+stap-server 155
+tcpdump 72
+radiusd 95
+setroubleshoot 490
+insights 489
+zabbix 488
+******************************print the 1st and 3rd column (with OFS setting 1)********************************************
+root-0
+bin-1
+daemon-2
+adm-3
+lp-4
+sync-5
+shutdown-6
+halt-7
+mail-8
+uucp-10
+operator-11
+games-12
+gopher-13
+ftp-14
+nobody-99
+dbus-81
+rpc-32
+oprofile-16
+named-25
+pegasus-66
+cimsrvr-134
+usbmuxd-113
+hsqldb-96
+rtkit-499
+nscd-28
+avahi-autoipd-170
+vcsa-69
+abrt-173
+apache-48
+saslauth-498
+postfix-89
+tss-59
+dovecot-97
+dovenull-497
+unbound-496
+haldaemon-68
+mysql-27
+rpcuser-29
+nfsnobody-65534
+mailnull-47
+smmsp-51
+tomcat-91
+ntp-38
+dhcpd-177
+memcached-495
+pcp-494
+gdm-42
+pulse-493
+xguest-500
+quagga-92
+sabayon-86
+sshd-74
+mailman-41
+webalizer-67
+arpwatch-77
+ident-98
+chrony-492
+uuidd-491
+nslcd-65
+ldap-55
+cyrus-76
+radvd-75
+squid-23
+stap-server-155
+tcpdump-72
+radiusd-95
+setroubleshoot-490
+insights-489
+zabbix-488
+******************************print the 1st and 3rd column (with OFS setting 2)********************************************
+root_0
+bin_1
+daemon_2
+adm_3
+lp_4
+sync_5
+shutdown_6
+halt_7
+mail_8
+uucp_10
+operator_11
+games_12
+gopher_13
+ftp_14
+nobody_99
+dbus_81
+rpc_32
+oprofile_16
+named_25
+pegasus_66
+cimsrvr_134
+usbmuxd_113
+hsqldb_96
+rtkit_499
+nscd_28
+avahi-autoipd_170
+vcsa_69
+abrt_173
+apache_48
+saslauth_498
+postfix_89
+tss_59
+dovecot_97
+dovenull_497
+unbound_496
+haldaemon_68
+mysql_27
+rpcuser_29
+nfsnobody_65534
+mailnull_47
+smmsp_51
+tomcat_91
+ntp_38
+dhcpd_177
+memcached_495
+pcp_494
+gdm_42
+pulse_493
+xguest_500
+quagga_92
+sabayon_86
+sshd_74
+mailman_41
+webalizer_67
+arpwatch_77
+ident_98
+chrony_492
+uuidd_491
+nslcd_65
+ldap_55
+cyrus_76
+radvd_75
+squid_23
+stap-server_155
+tcpdump_72
+radiusd_95
+setroubleshoot_490
+insights_489
+zabbix_488
+******************************print the 1st and 3rd column (with OFS setting 3)********************************************
+root=0
+bin=1
+daemon=2
+adm=3
+lp=4
+sync=5
+shutdown=6
+halt=7
+mail=8
+uucp=10
+operator=11
+games=12
+gopher=13
+ftp=14
+nobody=99
+dbus=81
+rpc=32
+oprofile=16
+named=25
+pegasus=66
+cimsrvr=134
+usbmuxd=113
+hsqldb=96
+rtkit=499
+nscd=28
+avahi-autoipd=170
+vcsa=69
+abrt=173
+apache=48
+saslauth=498
+postfix=89
+tss=59
+dovecot=97
+dovenull=497
+unbound=496
+haldaemon=68
+mysql=27
+rpcuser=29
+nfsnobody=65534
+mailnull=47
+smmsp=51
+tomcat=91
+ntp=38
+dhcpd=177
+memcached=495
+pcp=494
+gdm=42
+pulse=493
+xguest=500
+quagga=92
+sabayon=86
+sshd=74
+mailman=41
+webalizer=67
+arpwatch=77
+ident=98
+chrony=492
+uuidd=491
+nslcd=65
+ldap=55
+cyrus=76
+radvd=75
+squid=23
+stap-server=155
+tcpdump=72
+radiusd=95
+setroubleshoot=490
+insights=489
+zabbix=488
+******************************print the 1st and 3rd column (with OFS setting 4)********************************************
+root=0
+operator=11
+******************************print all of the contents with row num********************************************
+1 root:x:0:0:root:/root:/bin/bash
+2 bin:x:1:1:bin:/bin:/sbin/nologin
+3 daemon:x:2:2:daemon:/sbin:/sbin/nologin
+4 adm:x:3:4:adm:/var/adm:/sbin/nologin
+5 lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+6 sync:x:5:0:sync:/sbin:/bin/sync
+7 shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+8 halt:x:7:0:halt:/sbin:/sbin/halt
+9 mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+10 uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+11 operator:x:11:0:operator:/root:/sbin/nologin
+12 games:x:12:100:games:/usr/games:/sbin/nologin
+13 gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+14 ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+15 nobody:x:99:99:Nobody:/:/sbin/nologin
+16 dbus:x:81:81:System message bus:/:/sbin/nologin
+17 rpc:x:32:32:Rpcbind Daemon:/var/cache/rpcbind:/sbin/nologin
+18 oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+19 named:x:25:25:Named:/var/named:/sbin/nologin
+20 pegasus:x:66:65:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+21 cimsrvr:x:134:134:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+22 usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+23 hsqldb:x:96:96::/var/lib/hsqldb:/sbin/nologin
+24 rtkit:x:499:499:RealtimeKit:/proc:/sbin/nologin
+25 nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+26 avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+27 vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+28 abrt:x:173:173::/etc/abrt:/sbin/nologin
+29 apache:x:48:48:Apache:/var/www:/sbin/nologin
+30 saslauth:x:498:76:Saslauthd user:/var/empty/saslauth:/sbin/nologin
+31 postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+32 tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+33 dovecot:x:97:97:Dovecot IMAP server:/usr/libexec/dovecot:/sbin/nologin
+34 dovenull:x:497:493:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
+35 unbound:x:496:492:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+36 haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+37 mysql:x:27:27:MySQL Server:/var/lib/mysql:/bin/bash
+38 rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+39 nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+40 mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+41 smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+42 tomcat:x:91:91:Apache Tomcat:/usr/share/tomcat6:/sbin/nologin
+43 ntp:x:38:38::/etc/ntp:/sbin/nologin
+44 dhcpd:x:177:177:DHCP server:/:/sbin/nologin
+45 memcached:x:495:491:Memcached daemon:/var/run/memcached:/sbin/nologin
+46 pcp:x:494:490:Performance Co-Pilot:/var/lib/pcp:/sbin/nologin
+47 gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+48 pulse:x:493:489:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+49 xguest:x:500:500:Guest:/home/xguest:/bin/bash
+50 quagga:x:92:92:Quagga routing suite:/var/run/quagga:/sbin/nologin
+51 sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+52 sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+53 mailman:x:41:41:GNU Mailing List Manager:/usr/lib/mailman:/sbin/nologin
+54 webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+55 arpwatch:x:77:77::/var/lib/arpwatch:/sbin/nologin
+56 ident:x:98:98::/:/sbin/nologin
+57 chrony:x:492:485::/var/lib/chrony:/sbin/nologin
+58 uuidd:x:491:484:UUID generator helper daemon:/var/lib/libuuid:/sbin/nologin
+59 nslcd:x:65:55:LDAP Client User:/:/sbin/nologin
+60 ldap:x:55:55:LDAP User:/var/lib/ldap:/sbin/nologin
+61 cyrus:x:76:12:Cyrus IMAP Server:/var/lib/imap:/sbin/nologin
+62 radvd:x:75:75:radvd user:/:/sbin/nologin
+63 squid:x:23:23::/var/spool/squid:/sbin/nologin
+64 stap-server:x:155:155:Systemtap Compile Server:/var/lib/stap-server:/sbin/nologin
+65 tcpdump:x:72:72::/:/sbin/nologin
+66 radiusd:x:95:95:radiusd user:/home/radiusd:/sbin/nologin
+67 setroubleshoot:x:490:482::/var/lib/setroubleshoot:/sbin/nologin
+68 insights:x:489:481:Red Hat Insights:/var/lib/insights:/sbin/nologin
+69 zabbix:x:488:480:Zabbix Monitoring System:/var/lib/zabbix:/sbin/nologin
+******************************print the contents with row num larger than 7********************************************
+8 halt:x:7:0:halt:/sbin:/sbin/halt
+9 mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+10 uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+11 operator:x:11:0:operator:/root:/sbin/nologin
+12 games:x:12:100:games:/usr/games:/sbin/nologin
+13 gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+14 ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+15 nobody:x:99:99:Nobody:/:/sbin/nologin
+16 dbus:x:81:81:System message bus:/:/sbin/nologin
+17 rpc:x:32:32:Rpcbind Daemon:/var/cache/rpcbind:/sbin/nologin
+18 oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+19 named:x:25:25:Named:/var/named:/sbin/nologin
+20 pegasus:x:66:65:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+21 cimsrvr:x:134:134:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+22 usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+23 hsqldb:x:96:96::/var/lib/hsqldb:/sbin/nologin
+24 rtkit:x:499:499:RealtimeKit:/proc:/sbin/nologin
+25 nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+26 avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+27 vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+28 abrt:x:173:173::/etc/abrt:/sbin/nologin
+29 apache:x:48:48:Apache:/var/www:/sbin/nologin
+30 saslauth:x:498:76:Saslauthd user:/var/empty/saslauth:/sbin/nologin
+31 postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+32 tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+33 dovecot:x:97:97:Dovecot IMAP server:/usr/libexec/dovecot:/sbin/nologin
+34 dovenull:x:497:493:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
+35 unbound:x:496:492:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+36 haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+37 mysql:x:27:27:MySQL Server:/var/lib/mysql:/bin/bash
+38 rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+39 nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+40 mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+41 smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+42 tomcat:x:91:91:Apache Tomcat:/usr/share/tomcat6:/sbin/nologin
+43 ntp:x:38:38::/etc/ntp:/sbin/nologin
+44 dhcpd:x:177:177:DHCP server:/:/sbin/nologin
+45 memcached:x:495:491:Memcached daemon:/var/run/memcached:/sbin/nologin
+46 pcp:x:494:490:Performance Co-Pilot:/var/lib/pcp:/sbin/nologin
+47 gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+48 pulse:x:493:489:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+49 xguest:x:500:500:Guest:/home/xguest:/bin/bash
+50 quagga:x:92:92:Quagga routing suite:/var/run/quagga:/sbin/nologin
+51 sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+52 sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+53 mailman:x:41:41:GNU Mailing List Manager:/usr/lib/mailman:/sbin/nologin
+54 webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+55 arpwatch:x:77:77::/var/lib/arpwatch:/sbin/nologin
+56 ident:x:98:98::/:/sbin/nologin
+57 chrony:x:492:485::/var/lib/chrony:/sbin/nologin
+58 uuidd:x:491:484:UUID generator helper daemon:/var/lib/libuuid:/sbin/nologin
+59 nslcd:x:65:55:LDAP Client User:/:/sbin/nologin
+60 ldap:x:55:55:LDAP User:/var/lib/ldap:/sbin/nologin
+61 cyrus:x:76:12:Cyrus IMAP Server:/var/lib/imap:/sbin/nologin
+62 radvd:x:75:75:radvd user:/:/sbin/nologin
+63 squid:x:23:23::/var/spool/squid:/sbin/nologin
+64 stap-server:x:155:155:Systemtap Compile Server:/var/lib/stap-server:/sbin/nologin
+65 tcpdump:x:72:72::/:/sbin/nologin
+66 radiusd:x:95:95:radiusd user:/home/radiusd:/sbin/nologin
+67 setroubleshoot:x:490:482::/var/lib/setroubleshoot:/sbin/nologin
+68 insights:x:489:481:Red Hat Insights:/var/lib/insights:/sbin/nologin
+69 zabbix:x:488:480:Zabbix Monitoring System:/var/lib/zabbix:/sbin/nologin
+******************************print the 1st column with row num larger than 7********************************************
+8 halt
+9 mail
+10 uucp
+11 operator
+12 games
+13 gopher
+14 ftp
+15 nobody
+16 dbus
+17 rpc
+18 oprofile
+19 named
+20 pegasus
+21 cimsrvr
+22 usbmuxd
+23 hsqldb
+24 rtkit
+25 nscd
+26 avahi-autoipd
+27 vcsa
+28 abrt
+29 apache
+30 saslauth
+31 postfix
+32 tss
+33 dovecot
+34 dovenull
+35 unbound
+36 haldaemon
+37 mysql
+38 rpcuser
+39 nfsnobody
+40 mailnull
+41 smmsp
+42 tomcat
+43 ntp
+44 dhcpd
+45 memcached
+46 pcp
+47 gdm
+48 pulse
+49 xguest
+50 quagga
+51 sabayon
+52 sshd
+53 mailman
+54 webalizer
+55 arpwatch
+56 ident
+57 chrony
+58 uuidd
+59 nslcd
+60 ldap
+61 cyrus
+62 radvd
+63 squid
+64 stap-server
+65 tcpdump
+66 radiusd
+67 setroubleshoot
+68 insights
+69 zabbix
+******************************print the 1st column with row num larger than 7********************************************
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/cache/rpcbind:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+named:x:25:25:Named:/var/named:/sbin/nologin
+pegasus:x:66:65:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+cimsrvr:x:134:134:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+hsqldb:x:96:96::/var/lib/hsqldb:/sbin/nologin
+rtkit:x:499:499:RealtimeKit:/proc:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+saslauth:x:498:76:Saslauthd user:/var/empty/saslauth:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+dovecot:x:97:97:Dovecot IMAP server:/usr/libexec/dovecot:/sbin/nologin
+dovenull:x:497:493:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
+unbound:x:496:492:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+mysql:x:27:27:MySQL Server:/var/lib/mysql:/bin/bash
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+tomcat:x:91:91:Apache Tomcat:/usr/share/tomcat6:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+dhcpd:x:177:177:DHCP server:/:/sbin/nologin
+memcached:x:495:491:Memcached daemon:/var/run/memcached:/sbin/nologin
+pcp:x:494:490:Performance Co-Pilot:/var/lib/pcp:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+pulse:x:493:489:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+xguest:x:500:500:Guest:/home/xguest:/bin/bash
+quagga:x:92:92:Quagga routing suite:/var/run/quagga:/sbin/nologin
+sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+mailman:x:41:41:GNU Mailing List Manager:/usr/lib/mailman:/sbin/nologin
+webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+arpwatch:x:77:77::/var/lib/arpwatch:/sbin/nologin
+ident:x:98:98::/:/sbin/nologin
+chrony:x:492:485::/var/lib/chrony:/sbin/nologin
+uuidd:x:491:484:UUID generator helper daemon:/var/lib/libuuid:/sbin/nologin
+nslcd:x:65:55:LDAP Client User:/:/sbin/nologin
+ldap:x:55:55:LDAP User:/var/lib/ldap:/sbin/nologin
+cyrus:x:76:12:Cyrus IMAP Server:/var/lib/imap:/sbin/nologin
+radvd:x:75:75:radvd user:/:/sbin/nologin
+squid:x:23:23::/var/spool/squid:/sbin/nologin
+stap-server:x:155:155:Systemtap Compile Server:/var/lib/stap-server:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+radiusd:x:95:95:radiusd user:/home/radiusd:/sbin/nologin
+setroubleshoot:x:490:482::/var/lib/setroubleshoot:/sbin/nologin
+insights:x:489:481:Red Hat Insights:/var/lib/insights:/sbin/nologin
+zabbix:x:488:480:Zabbix Monitoring System:/var/lib/zabbix:/sbin/nologin
+******************************print the 3rd column (and value of 3rd colunm plus 1) with row num between 7 and 14********************************************
+8 7 8
+9 8 9
+10 10 11
+11 11 12
+12 12 13
+13 13 14
+******************************print NF ********************************************
+1 7
+2 7
+3 7
+4 7
+5 7
+6 7
+7 7
+8 7
+9 7
+10 7
+11 7
+12 7
+13 7
+14 7
+15 7
+16 7
+17 7
+18 7
+19 7
+20 7
+21 7
+22 7
+23 7
+24 7
+25 7
+26 7
+27 7
+28 7
+29 7
+30 7
+31 7
+32 7
+33 7
+34 7
+35 7
+36 7
+37 7
+38 7
+39 7
+40 7
+41 7
+42 7
+43 7
+44 7
+45 7
+46 7
+47 7
+48 7
+49 7
+50 7
+51 7
+52 7
+53 7
+54 7
+55 7
+56 7
+57 7
+58 7
+59 7
+60 7
+61 7
+62 7
+63 7
+64 7
+65 7
+66 7
+67 7
+68 7
+69 7
+******************************print NF ********************************************
+1 7
+2 7
+3 7
+4 7
+5 7
+6 7
+7 7
+8 7
+9 7
+10 7
+11 7
+12 7
+13 7
+14 7
+15 7
+16 7
+17 7
+18 7
+19 7
+20 7
+21 7
+22 7
+23 7
+24 7
+25 7
+26 7
+27 7
+28 7
+29 7
+30 7
+31 7
+32 7
+33 7
+34 7
+35 7
+36 7
+37 7
+38 7
+39 7
+40 7
+41 7
+42 7
+43 7
+44 7
+45 7
+46 7
+47 7
+48 7
+49 7
+50 7
+51 7
+52 7
+53 7
+54 7
+55 7
+56 7
+57 7
+58 7
+59 7
+60 7
+61 7
+62 7
+63 7
+64 7
+65 7
+66 7
+67 7
+68 7
+69 7
+******************************print the 3rd column count backwards ********************************************
+root
+bin
+daemon
+adm
+lp
+sync
+shutdown
+halt
+mail
+uucp
+operator
+games
+gopher
+FTP User
+Nobody
+System message bus
+Rpcbind Daemon
+Special user account to be used by OProfile
+Named
+tog-pegasus OpenPegasus WBEM/CIM services
+tog-pegasus OpenPegasus WBEM/CIM services
+usbmuxd user
+
+RealtimeKit
+NSCD Daemon
+Avahi IPv4LL Stack
+virtual console memory owner
+
+Apache
+Saslauthd user
+
+Account used by the trousers package to sandbox the tcsd daemon
+Dovecot IMAP server
+Dovecot's unauthorized user
+Unbound DNS resolver
+HAL daemon
+MySQL Server
+RPC Service User
+Anonymous NFS User
+
+
+Apache Tomcat
+
+DHCP server
+Memcached daemon
+Performance Co-Pilot
+
+PulseAudio System Daemon
+Guest
+Quagga routing suite
+Sabayon user
+Privilege-separated SSH
+GNU Mailing List Manager
+Webalizer
+
+
+
+UUID generator helper daemon
+LDAP Client User
+LDAP User
+Cyrus IMAP Server
+radvd user
+
+Systemtap Compile Server
+
+radiusd user
+
+Red Hat Insights
+Zabbix Monitoring System
+******************************print the 1st and 3rd column (method 1)********************************************
+root 0
+bin 1
+daemon 2
+adm 3
+lp 4
+sync 5
+shutdown 6
+halt 7
+mail 8
+uucp 10
+operator 11
+games 12
+gopher 13
+ftp 14
+nobody 99
+dbus 81
+rpc 32
+oprofile 16
+named 25
+pegasus 66
+cimsrvr 134
+usbmuxd 113
+hsqldb 96
+rtkit 499
+nscd 28
+avahi-autoipd 170
+vcsa 69
+abrt 173
+apache 48
+saslauth 498
+postfix 89
+tss 59
+dovecot 97
+dovenull 497
+unbound 496
+haldaemon 68
+mysql 27
+rpcuser 29
+nfsnobody 65534
+mailnull 47
+smmsp 51
+tomcat 91
+ntp 38
+dhcpd 177
+memcached 495
+pcp 494
+gdm 42
+pulse 493
+xguest 500
+quagga 92
+sabayon 86
+sshd 74
+mailman 41
+webalizer 67
+arpwatch 77
+ident 98
+chrony 492
+uuidd 491
+nslcd 65
+ldap 55
+cyrus 76
+radvd 75
+squid 23
+stap-server 155
+tcpdump 72
+radiusd 95
+setroubleshoot 490
+insights 489
+zabbix 488
+******************************print the 1st and 3rd column (method 2)********************************************
+root 0
+bin 1
+daemon 2
+adm 3
+lp 4
+sync 5
+shutdown 6
+halt 7
+mail 8
+uucp 10
+operator 11
+games 12
+gopher 13
+ftp 14
+nobody 99
+dbus 81
+rpc 32
+oprofile 16
+named 25
+pegasus 66
+cimsrvr 134
+usbmuxd 113
+hsqldb 96
+rtkit 499
+nscd 28
+avahi-autoipd 170
+vcsa 69
+abrt 173
+apache 48
+saslauth 498
+postfix 89
+tss 59
+dovecot 97
+dovenull 497
+unbound 496
+haldaemon 68
+mysql 27
+rpcuser 29
+nfsnobody 65534
+mailnull 47
+smmsp 51
+tomcat 91
+ntp 38
+dhcpd 177
+memcached 495
+pcp 494
+gdm 42
+pulse 493
+xguest 500
+quagga 92
+sabayon 86
+sshd 74
+mailman 41
+webalizer 67
+arpwatch 77
+ident 98
+chrony 492
+uuidd 491
+nslcd 65
+ldap 55
+cyrus 76
+radvd 75
+squid 23
+stap-server 155
+tcpdump 72
+radiusd 95
+setroubleshoot 490
+insights 489
+zabbix 488
+******************************print the 1st and 3rd column (method 3_1)********************************************
+root_0
+bin_1
+daemon_2
+adm_3
+lp_4
+sync_5
+shutdown_6
+halt_7
+mail_8
+uucp_10
+operator_11
+games_12
+gopher_13
+ftp_14
+nobody_99
+dbus_81
+rpc_32
+oprofile_16
+named_25
+pegasus_66
+cimsrvr_134
+usbmuxd_113
+hsqldb_96
+rtkit_499
+nscd_28
+avahi-autoipd_170
+vcsa_69
+abrt_173
+apache_48
+saslauth_498
+postfix_89
+tss_59
+dovecot_97
+dovenull_497
+unbound_496
+haldaemon_68
+mysql_27
+rpcuser_29
+nfsnobody_65534
+mailnull_47
+smmsp_51
+tomcat_91
+ntp_38
+dhcpd_177
+memcached_495
+pcp_494
+gdm_42
+pulse_493
+xguest_500
+quagga_92
+sabayon_86
+sshd_74
+mailman_41
+webalizer_67
+arpwatch_77
+ident_98
+chrony_492
+uuidd_491
+nslcd_65
+ldap_55
+cyrus_76
+radvd_75
+squid_23
+stap-server_155
+tcpdump_72
+radiusd_95
+setroubleshoot_490
+insights_489
+zabbix_488
+******************************print the 1st and 3rd column (method 3_2)********************************************
+root_0
+bin_1
+daemon_2
+adm_3
+lp_4
+sync_5
+shutdown_6
+halt_7
+mail_8
+uucp_10
+operator_11
+games_12
+gopher_13
+ftp_14
+nobody_99
+dbus_81
+rpc_32
+oprofile_16
+named_25
+pegasus_66
+cimsrvr_134
+usbmuxd_113
+hsqldb_96
+rtkit_499
+nscd_28
+avahi-autoipd_170
+vcsa_69
+abrt_173
+apache_48
+saslauth_498
+postfix_89
+tss_59
+dovecot_97
+dovenull_497
+unbound_496
+haldaemon_68
+mysql_27
+rpcuser_29
+nfsnobody_65534
+mailnull_47
+smmsp_51
+tomcat_91
+ntp_38
+dhcpd_177
+memcached_495
+pcp_494
+gdm_42
+pulse_493
+xguest_500
+quagga_92
+sabayon_86
+sshd_74
+mailman_41
+webalizer_67
+arpwatch_77
+ident_98
+chrony_492
+uuidd_491
+nslcd_65
+ldap_55
+cyrus_76
+radvd_75
+squid_23
+stap-server_155
+tcpdump_72
+radiusd_95
+setroubleshoot_490
+insights_489
+zabbix_488
+******************************print the 1st and 3rd column (change separator1)********************************************
+root:x:0:0:root:  and bin
+bin:x:1:1:bin:  and sbin
+daemon:x:2:2:daemon:  and sbin
+adm:x:3:4:adm:  and adm:
+lp:x:4:7:lp:  and spool
+sync:x:5:0:sync:  and bin
+shutdown:x:6:0:shutdown:  and sbin
+halt:x:7:0:halt:  and sbin
+mail:x:8:12:mail:  and spool
+uucp:x:10:14:uucp:  and spool
+operator:x:11:0:operator:  and sbin
+games:x:12:100:games:  and games:
+gopher:x:13:30:gopher:  and gopher:
+ftp:x:14:50:FTP User:  and ftp:
+nobody:x:99:99:Nobody:  and sbin
+dbus:x:81:81:System message bus:  and sbin
+rpc:x:32:32:Rpcbind Daemon:  and cache
+oprofile:x:16:16:Special user account to be used by OProfile:  and oprofile:
+named:x:25:25:Named:  and named:
+pegasus:x:66:65:tog-pegasus OpenPegasus WBEM  and var
+cimsrvr:x:134:134:tog-pegasus OpenPegasus WBEM  and var
+usbmuxd:x:113:113:usbmuxd user:  and sbin
+hsqldb:x:96:96::  and lib
+rtkit:x:499:499:RealtimeKit:  and sbin
+nscd:x:28:28:NSCD Daemon:  and sbin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:  and lib
+vcsa:x:69:69:virtual console memory owner:  and sbin
+abrt:x:173:173::  and abrt:
+apache:x:48:48:Apache:  and www:
+saslauth:x:498:76:Saslauthd user:  and empty
+postfix:x:89:89::  and spool
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:  and null:
+dovecot:x:97:97:Dovecot IMAP server:  and libexec
+dovenull:x:497:493:Dovecot's unauthorized user:  and libexec
+unbound:x:496:492:Unbound DNS resolver:  and unbound:
+haldaemon:x:68:68:HAL daemon:  and sbin
+mysql:x:27:27:MySQL Server:  and lib
+rpcuser:x:29:29:RPC Service User:  and lib
+nfsnobody:x:65534:65534:Anonymous NFS User:  and lib
+mailnull:x:47:47::  and spool
+smmsp:x:51:51::  and spool
+tomcat:x:91:91:Apache Tomcat:  and share
+ntp:x:38:38::  and ntp:
+dhcpd:x:177:177:DHCP server:  and sbin
+memcached:x:495:491:Memcached daemon:  and run
+pcp:x:494:490:Performance Co-Pilot:  and lib
+gdm:x:42:42::  and lib
+pulse:x:493:489:PulseAudio System Daemon:  and run
+xguest:x:500:500:Guest:  and xguest:
+quagga:x:92:92:Quagga routing suite:  and run
+sabayon:x:86:86:Sabayon user:  and sabayon:
+sshd:x:74:74:Privilege-separated SSH:  and empty
+mailman:x:41:41:GNU Mailing List Manager:  and lib
+webalizer:x:67:67:Webalizer:  and www
+arpwatch:x:77:77::  and lib
+ident:x:98:98::  and sbin
+chrony:x:492:485::  and lib
+uuidd:x:491:484:UUID generator helper daemon:  and lib
+nslcd:x:65:55:LDAP Client User:  and sbin
+ldap:x:55:55:LDAP User:  and lib
+cyrus:x:76:12:Cyrus IMAP Server:  and lib
+radvd:x:75:75:radvd user:  and sbin
+squid:x:23:23::  and spool
+stap-server:x:155:155:Systemtap Compile Server:  and lib
+tcpdump:x:72:72::  and sbin
+radiusd:x:95:95:radiusd user:  and radiusd:
+setroubleshoot:x:490:482::  and lib
+insights:x:489:481:Red Hat Insights:  and lib
+zabbix:x:488:480:Zabbix Monitoring System:  and lib
+******************************print the 1st and 3rd column (change separator2)********************************************
+root:x:0:0:root:  and bin NF value is 4
+bin:x:1:1:bin:  and sbin NF value is 4
+daemon:x:2:2:daemon:  and sbin NF value is 4
+adm:x:3:4:adm:  and adm: NF value is 5
+lp:x:4:7:lp:  and spool NF value is 6
+sync:x:5:0:sync:  and bin NF value is 4
+shutdown:x:6:0:shutdown:  and sbin NF value is 4
+halt:x:7:0:halt:  and sbin NF value is 4
+mail:x:8:12:mail:  and spool NF value is 6
+uucp:x:10:14:uucp:  and spool NF value is 6
+operator:x:11:0:operator:  and sbin NF value is 4
+games:x:12:100:games:  and games: NF value is 5
+gopher:x:13:30:gopher:  and gopher: NF value is 5
+ftp:x:14:50:FTP User:  and ftp: NF value is 5
+nobody:x:99:99:Nobody:  and sbin NF value is 4
+dbus:x:81:81:System message bus:  and sbin NF value is 4
+rpc:x:32:32:Rpcbind Daemon:  and cache NF value is 6
+oprofile:x:16:16:Special user account to be used by OProfile:  and oprofile: NF value is 5
+named:x:25:25:Named:  and named: NF value is 5
+pegasus:x:66:65:tog-pegasus OpenPegasus WBEM  and var NF value is 7
+cimsrvr:x:134:134:tog-pegasus OpenPegasus WBEM  and var NF value is 7
+usbmuxd:x:113:113:usbmuxd user:  and sbin NF value is 4
+hsqldb:x:96:96::  and lib NF value is 6
+rtkit:x:499:499:RealtimeKit:  and sbin NF value is 4
+nscd:x:28:28:NSCD Daemon:  and sbin NF value is 4
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:  and lib NF value is 6
+vcsa:x:69:69:virtual console memory owner:  and sbin NF value is 4
+abrt:x:173:173::  and abrt: NF value is 5
+apache:x:48:48:Apache:  and www: NF value is 5
+saslauth:x:498:76:Saslauthd user:  and empty NF value is 6
+postfix:x:89:89::  and spool NF value is 6
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:  and null: NF value is 5
+dovecot:x:97:97:Dovecot IMAP server:  and libexec NF value is 6
+dovenull:x:497:493:Dovecot's unauthorized user:  and libexec NF value is 6
+unbound:x:496:492:Unbound DNS resolver:  and unbound: NF value is 5
+haldaemon:x:68:68:HAL daemon:  and sbin NF value is 4
+mysql:x:27:27:MySQL Server:  and lib NF value is 6
+rpcuser:x:29:29:RPC Service User:  and lib NF value is 6
+nfsnobody:x:65534:65534:Anonymous NFS User:  and lib NF value is 6
+mailnull:x:47:47::  and spool NF value is 6
+smmsp:x:51:51::  and spool NF value is 6
+tomcat:x:91:91:Apache Tomcat:  and share NF value is 6
+ntp:x:38:38::  and ntp: NF value is 5
+dhcpd:x:177:177:DHCP server:  and sbin NF value is 4
+memcached:x:495:491:Memcached daemon:  and run NF value is 6
+pcp:x:494:490:Performance Co-Pilot:  and lib NF value is 6
+gdm:x:42:42::  and lib NF value is 6
+pulse:x:493:489:PulseAudio System Daemon:  and run NF value is 6
+xguest:x:500:500:Guest:  and xguest: NF value is 5
+quagga:x:92:92:Quagga routing suite:  and run NF value is 6
+sabayon:x:86:86:Sabayon user:  and sabayon: NF value is 5
+sshd:x:74:74:Privilege-separated SSH:  and empty NF value is 6
+mailman:x:41:41:GNU Mailing List Manager:  and lib NF value is 6
+webalizer:x:67:67:Webalizer:  and www NF value is 6
+arpwatch:x:77:77::  and lib NF value is 6
+ident:x:98:98::  and sbin NF value is 4
+chrony:x:492:485::  and lib NF value is 6
+uuidd:x:491:484:UUID generator helper daemon:  and lib NF value is 6
+nslcd:x:65:55:LDAP Client User:  and sbin NF value is 4
+ldap:x:55:55:LDAP User:  and lib NF value is 6
+cyrus:x:76:12:Cyrus IMAP Server:  and lib NF value is 6
+radvd:x:75:75:radvd user:  and sbin NF value is 4
+squid:x:23:23::  and spool NF value is 6
+stap-server:x:155:155:Systemtap Compile Server:  and lib NF value is 6
+tcpdump:x:72:72::  and sbin NF value is 4
+radiusd:x:95:95:radiusd user:  and radiusd: NF value is 5
+setroubleshoot:x:490:482::  and lib NF value is 6
+insights:x:489:481:Red Hat Insights:  and lib NF value is 6
+zabbix:x:488:480:Zabbix Monitoring System:  and lib NF value is 6
+****************************** explore the priority of separator -F/ and FS=:********************************************
+root  and 0 NF value is 7
+bin  and 1 NF value is 7
+daemon  and 2 NF value is 7
+adm  and 3 NF value is 7
+lp  and 4 NF value is 7
+sync  and 5 NF value is 7
+shutdown  and 6 NF value is 7
+halt  and 7 NF value is 7
+mail  and 8 NF value is 7
+uucp  and 10 NF value is 7
+operator  and 11 NF value is 7
+games  and 12 NF value is 7
+gopher  and 13 NF value is 7
+ftp  and 14 NF value is 7
+nobody  and 99 NF value is 7
+dbus  and 81 NF value is 7
+rpc  and 32 NF value is 7
+oprofile  and 16 NF value is 7
+named  and 25 NF value is 7
+pegasus  and 66 NF value is 7
+cimsrvr  and 134 NF value is 7
+usbmuxd  and 113 NF value is 7
+hsqldb  and 96 NF value is 7
+rtkit  and 499 NF value is 7
+nscd  and 28 NF value is 7
+avahi-autoipd  and 170 NF value is 7
+vcsa  and 69 NF value is 7
+abrt  and 173 NF value is 7
+apache  and 48 NF value is 7
+saslauth  and 498 NF value is 7
+postfix  and 89 NF value is 7
+tss  and 59 NF value is 7
+dovecot  and 97 NF value is 7
+dovenull  and 497 NF value is 7
+unbound  and 496 NF value is 7
+haldaemon  and 68 NF value is 7
+mysql  and 27 NF value is 7
+rpcuser  and 29 NF value is 7
+nfsnobody  and 65534 NF value is 7
+mailnull  and 47 NF value is 7
+smmsp  and 51 NF value is 7
+tomcat  and 91 NF value is 7
+ntp  and 38 NF value is 7
+dhcpd  and 177 NF value is 7
+memcached  and 495 NF value is 7
+pcp  and 494 NF value is 7
+gdm  and 42 NF value is 7
+pulse  and 493 NF value is 7
+xguest  and 500 NF value is 7
+quagga  and 92 NF value is 7
+sabayon  and 86 NF value is 7
+sshd  and 74 NF value is 7
+mailman  and 41 NF value is 7
+webalizer  and 67 NF value is 7
+arpwatch  and 77 NF value is 7
+ident  and 98 NF value is 7
+chrony  and 492 NF value is 7
+uuidd  and 491 NF value is 7
+nslcd  and 65 NF value is 7
+ldap  and 55 NF value is 7
+cyrus  and 76 NF value is 7
+radvd  and 75 NF value is 7
+squid  and 23 NF value is 7
+stap-server  and 155 NF value is 7
+tcpdump  and 72 NF value is 7
+radiusd  and 95 NF value is 7
+setroubleshoot  and 490 NF value is 7
+insights  and 489 NF value is 7
+zabbix  and 488 NF value is 7
+//*****************************************format the output study1*************************************//
+user_name:root  user_ID: 0
+user_name:bin  user_ID: 1
+user_name:daemon  user_ID: 2
+user_name:adm  user_ID: 3
+user_name:lp  user_ID: 4
+user_name:sync  user_ID: 5
+user_name:shutdown  user_ID: 6
+user_name:halt  user_ID: 7
+user_name:mail  user_ID: 8
+user_name:uucp  user_ID: 10
+user_name:operator  user_ID: 11
+user_name:games  user_ID: 12
+user_name:gopher  user_ID: 13
+user_name:ftp  user_ID: 14
+user_name:nobody  user_ID: 99
+user_name:dbus  user_ID: 81
+user_name:rpc  user_ID: 32
+user_name:oprofile  user_ID: 16
+user_name:named  user_ID: 25
+user_name:pegasus  user_ID: 66
+user_name:cimsrvr  user_ID: 134
+user_name:usbmuxd  user_ID: 113
+user_name:hsqldb  user_ID: 96
+user_name:rtkit  user_ID: 499
+user_name:nscd  user_ID: 28
+user_name:avahi-autoipd  user_ID: 170
+user_name:vcsa  user_ID: 69
+user_name:abrt  user_ID: 173
+user_name:apache  user_ID: 48
+user_name:saslauth  user_ID: 498
+user_name:postfix  user_ID: 89
+user_name:tss  user_ID: 59
+user_name:dovecot  user_ID: 97
+user_name:dovenull  user_ID: 497
+user_name:unbound  user_ID: 496
+user_name:haldaemon  user_ID: 68
+user_name:mysql  user_ID: 27
+user_name:rpcuser  user_ID: 29
+user_name:nfsnobody  user_ID: 65534
+user_name:mailnull  user_ID: 47
+user_name:smmsp  user_ID: 51
+user_name:tomcat  user_ID: 91
+user_name:ntp  user_ID: 38
+user_name:dhcpd  user_ID: 177
+user_name:memcached  user_ID: 495
+user_name:pcp  user_ID: 494
+user_name:gdm  user_ID: 42
+user_name:pulse  user_ID: 493
+user_name:xguest  user_ID: 500
+user_name:quagga  user_ID: 92
+user_name:sabayon  user_ID: 86
+user_name:sshd  user_ID: 74
+user_name:mailman  user_ID: 41
+user_name:webalizer  user_ID: 67
+user_name:arpwatch  user_ID: 77
+user_name:ident  user_ID: 98
+user_name:chrony  user_ID: 492
+user_name:uuidd  user_ID: 491
+user_name:nslcd  user_ID: 65
+user_name:ldap  user_ID: 55
+user_name:cyrus  user_ID: 76
+user_name:radvd  user_ID: 75
+user_name:squid  user_ID: 23
+user_name:stap-server  user_ID: 155
+user_name:tcpdump  user_ID: 72
+user_name:radiusd  user_ID: 95
+user_name:setroubleshoot  user_ID: 490
+user_name:insights  user_ID: 489
+user_name:zabbix  user_ID: 488
+//*****************************************format the output study2************************************//
+user_name:root             user_ID: 0    
+user_name:bin              user_ID: 1    
+user_name:daemon           user_ID: 2    
+user_name:adm              user_ID: 3    
+user_name:lp               user_ID: 4    
+user_name:sync             user_ID: 5    
+user_name:shutdown         user_ID: 6    
+user_name:halt             user_ID: 7    
+user_name:mail             user_ID: 8    
+user_name:uucp             user_ID: 10   
+user_name:operator         user_ID: 11   
+user_name:games            user_ID: 12   
+user_name:gopher           user_ID: 13   
+user_name:ftp              user_ID: 14   
+user_name:nobody           user_ID: 99   
+user_name:dbus             user_ID: 81   
+user_name:rpc              user_ID: 32   
+user_name:oprofile         user_ID: 16   
+user_name:named            user_ID: 25   
+user_name:pegasus          user_ID: 66   
+user_name:cimsrvr          user_ID: 134  
+user_name:usbmuxd          user_ID: 113  
+user_name:hsqldb           user_ID: 96   
+user_name:rtkit            user_ID: 499  
+user_name:nscd             user_ID: 28   
+user_name:avahi-autoipd    user_ID: 170  
+user_name:vcsa             user_ID: 69   
+user_name:abrt             user_ID: 173  
+user_name:apache           user_ID: 48   
+user_name:saslauth         user_ID: 498  
+user_name:postfix          user_ID: 89   
+user_name:tss              user_ID: 59   
+user_name:dovecot          user_ID: 97   
+user_name:dovenull         user_ID: 497  
+user_name:unbound          user_ID: 496  
+user_name:haldaemon        user_ID: 68   
+user_name:mysql            user_ID: 27   
+user_name:rpcuser          user_ID: 29   
+user_name:nfsnobody        user_ID: 65534
+user_name:mailnull         user_ID: 47   
+user_name:smmsp            user_ID: 51   
+user_name:tomcat           user_ID: 91   
+user_name:ntp              user_ID: 38   
+user_name:dhcpd            user_ID: 177  
+user_name:memcached        user_ID: 495  
+user_name:pcp              user_ID: 494  
+user_name:gdm              user_ID: 42   
+user_name:pulse            user_ID: 493  
+user_name:xguest           user_ID: 500  
+user_name:quagga           user_ID: 92   
+user_name:sabayon          user_ID: 86   
+user_name:sshd             user_ID: 74   
+user_name:mailman          user_ID: 41   
+user_name:webalizer        user_ID: 67   
+user_name:arpwatch         user_ID: 77   
+user_name:ident            user_ID: 98   
+user_name:chrony           user_ID: 492  
+user_name:uuidd            user_ID: 491  
+user_name:nslcd            user_ID: 65   
+user_name:ldap             user_ID: 55   
+user_name:cyrus            user_ID: 76   
+user_name:radvd            user_ID: 75   
+user_name:squid            user_ID: 23   
+user_name:stap-server      user_ID: 155  
+user_name:tcpdump          user_ID: 72   
+user_name:radiusd          user_ID: 95   
+user_name:setroubleshoot   user_ID: 490  
+user_name:insights         user_ID: 489  
+user_name:zabbix           user_ID: 488  
+//*****************************************format the output study3************************************//
+user_name:root             user_ID: 0    
+user_name:bin              user_ID: 1    
+user_name:daemon           user_ID: 2    
+user_name:adm              user_ID: 3    
+user_name:lp               user_ID: 4    
+user_name:sync             user_ID: 5    
+user_name:shutdown         user_ID: 6    
+user_name:halt             user_ID: 7    
+user_name:mail             user_ID: 8    
+user_name:uucp             user_ID: 10   
+user_name:operator         user_ID: 11   
+user_name:games            user_ID: 12   
+user_name:gopher           user_ID: 13   
+user_name:ftp              user_ID: 14   
+user_name:nobody           user_ID: 99   
+user_name:dbus             user_ID: 81   
+user_name:rpc              user_ID: 32   
+user_name:oprofile         user_ID: 16   
+user_name:named            user_ID: 25   
+user_name:pegasus          user_ID: 66   
+user_name:cimsrvr          user_ID: 134  
+user_name:usbmuxd          user_ID: 113  
+user_name:hsqldb           user_ID: 96   
+user_name:rtkit            user_ID: 499  
+user_name:nscd             user_ID: 28   
+user_name:avahi-autoipd    user_ID: 170  
+user_name:vcsa             user_ID: 69   
+user_name:abrt             user_ID: 173  
+user_name:apache           user_ID: 48   
+user_name:saslauth         user_ID: 498  
+user_name:postfix          user_ID: 89   
+user_name:tss              user_ID: 59   
+user_name:dovecot          user_ID: 97   
+user_name:dovenull         user_ID: 497  
+user_name:unbound          user_ID: 496  
+user_name:haldaemon        user_ID: 68   
+user_name:mysql            user_ID: 27   
+user_name:rpcuser          user_ID: 29   
+user_name:nfsnobody        user_ID: 65534
+user_name:mailnull         user_ID: 47   
+user_name:smmsp            user_ID: 51   
+user_name:tomcat           user_ID: 91   
+user_name:ntp              user_ID: 38   
+user_name:dhcpd            user_ID: 177  
+user_name:memcached        user_ID: 495  
+user_name:pcp              user_ID: 494  
+user_name:gdm              user_ID: 42   
+user_name:pulse            user_ID: 493  
+user_name:xguest           user_ID: 500  
+user_name:quagga           user_ID: 92   
+user_name:sabayon          user_ID: 86   
+user_name:sshd             user_ID: 74   
+user_name:mailman          user_ID: 41   
+user_name:webalizer        user_ID: 67   
+user_name:arpwatch         user_ID: 77   
+user_name:ident            user_ID: 98   
+user_name:chrony           user_ID: 492  
+user_name:uuidd            user_ID: 491  
+user_name:nslcd            user_ID: 65   
+user_name:ldap             user_ID: 55   
+user_name:cyrus            user_ID: 76   
+user_name:radvd            user_ID: 75   
+user_name:squid            user_ID: 23   
+user_name:stap-server      user_ID: 155  
+user_name:tcpdump          user_ID: 72   
+user_name:radiusd          user_ID: 95   
+user_name:setroubleshoot   user_ID: 490  
+user_name:insights         user_ID: 489  
+user_name:zabbix           user_ID: 488  
+//*****************************************calculate the max character length of the first column************************************//
+14
+//*****************************************output the 1st and 3rd column with good format*************************************//
+1st_column:root                3rd_column: 0
+1st_column:bin                 3rd_column: 1
+1st_column:daemon              3rd_column: 2
+1st_column:adm                 3rd_column: 3
+1st_column:lp                  3rd_column: 4
+1st_column:sync                3rd_column: 5
+1st_column:shutdown            3rd_column: 6
+1st_column:halt                3rd_column: 7
+1st_column:mail                3rd_column: 8
+1st_column:uucp                3rd_column: 10
+1st_column:operator            3rd_column: 11
+1st_column:games               3rd_column: 12
+1st_column:gopher              3rd_column: 13
+1st_column:ftp                 3rd_column: 14
+1st_column:nobody              3rd_column: 99
+1st_column:dbus                3rd_column: 81
+1st_column:rpc                 3rd_column: 32
+1st_column:oprofile            3rd_column: 16
+1st_column:named               3rd_column: 25
+1st_column:pegasus             3rd_column: 66
+1st_column:cimsrvr             3rd_column: 134
+1st_column:usbmuxd             3rd_column: 113
+1st_column:hsqldb              3rd_column: 96
+1st_column:rtkit               3rd_column: 499
+1st_column:nscd                3rd_column: 28
+1st_column:avahi-autoipd       3rd_column: 170
+1st_column:vcsa                3rd_column: 69
+1st_column:abrt                3rd_column: 173
+1st_column:apache              3rd_column: 48
+1st_column:saslauth            3rd_column: 498
+1st_column:postfix             3rd_column: 89
+1st_column:tss                 3rd_column: 59
+1st_column:dovecot             3rd_column: 97
+1st_column:dovenull            3rd_column: 497
+1st_column:unbound             3rd_column: 496
+1st_column:haldaemon           3rd_column: 68
+1st_column:mysql               3rd_column: 27
+1st_column:rpcuser             3rd_column: 29
+1st_column:nfsnobody           3rd_column: 65534
+1st_column:mailnull            3rd_column: 47
+1st_column:smmsp               3rd_column: 51
+1st_column:tomcat              3rd_column: 91
+1st_column:ntp                 3rd_column: 38
+1st_column:dhcpd               3rd_column: 177
+1st_column:memcached           3rd_column: 495
+1st_column:pcp                 3rd_column: 494
+1st_column:gdm                 3rd_column: 42
+1st_column:pulse               3rd_column: 493
+1st_column:xguest              3rd_column: 500
+1st_column:quagga              3rd_column: 92
+1st_column:sabayon             3rd_column: 86
+1st_column:sshd                3rd_column: 74
+1st_column:mailman             3rd_column: 41
+1st_column:webalizer           3rd_column: 67
+1st_column:arpwatch            3rd_column: 77
+1st_column:ident               3rd_column: 98
+1st_column:chrony              3rd_column: 492
+1st_column:uuidd               3rd_column: 491
+1st_column:nslcd               3rd_column: 65
+1st_column:ldap                3rd_column: 55
+1st_column:cyrus               3rd_column: 76
+1st_column:radvd               3rd_column: 75
+1st_column:squid               3rd_column: 23
+1st_column:stap-server         3rd_column: 155
+1st_column:tcpdump             3rd_column: 72
+1st_column:radiusd             3rd_column: 95
+1st_column:setroubleshoot      3rd_column: 490
+1st_column:insights            3rd_column: 489
+1st_column:zabbix              3rd_column: 488
+//*****************************************regular expression*************************************//
+root:x:0:0:root:/root:/bin/bash
+//*****************************************regular expression2*************************************//
+1 and 2 and 3
+1 and 2 and 3
+******************************show the contents of the input file ltec_sub.ini(begin)***********************
+# run testcases in  ltec/data/input/CW1 and ltec/data/input/HARQ
+[Module]
+module=lted
+fpga = fpga
+run_all  = 0
+case_cnt = 1
+[Case1]
+sim_op := +sub_case=HARQ +test_case=
+
+[Case2]
+sim_op := +sub_case=HARQ +test_case=
+
+
+******************************show the contents of the input file ltec_sub.ini(end)***********************
+**********************pattern match learning (end)***********************************
+module is: lted
+fpga is :fpga
+runall is :0
+the case_num is 1
