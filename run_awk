@@ -1,0 +1,1 @@
+./awk_script.sh awk_f1.txt ltec_sub.ini append | tee ./run_awk.log
